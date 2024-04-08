@@ -7,5 +7,5 @@ struct car
      int year[50];
      int price;
 };
-struct patient patients[10];
+struct car[10];
 ;
