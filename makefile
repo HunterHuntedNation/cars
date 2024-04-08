@@ -1,19 +1,11 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -std=c11
+#include <stdio.h>
+#include <stdlib.h>
 
-SRCS = main.c
-OBJS = $(SRCS:.c=.o)
-TARGET = cars
-
-.PHONY: all clean
-
-all: $(TARGET)
-
-$(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-clean:
-	rm -f $(OBJS) $(TARGET)
+struct car
+ {
+     char model[50];
+     int year[50];
+     int price;
+};
+struct patient patients[10];
+;
